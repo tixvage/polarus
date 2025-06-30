@@ -25,9 +25,9 @@
 #define MOVE_SPEED 50.f
 
 int main(void) {
-    //SetConfigFlags(FLAG_MSAA_4X_HINT);
+    SetConfigFlags(FLAG_MSAA_4X_HINT);
     InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "polar-coords");
-    //SetTargetFPS(60);
+    SetTargetFPS(60);
 
     Texture2D default_texture = { rlGetTextureIdDefault(), 1, 1, 1, RL_PIXELFORMAT_UNCOMPRESSED_R8G8B8A8 };
 
