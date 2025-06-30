@@ -20,7 +20,7 @@
 
 #define TEXT_PADDING 20
 
-#define MOUSE_SPEED 50.f
+#define MOUSE_SPEED 5.f
 #define ROTATE_SPEED 100.f
 #define MOVE_SPEED 50.f
 
@@ -82,7 +82,7 @@ int main(void) {
     while (!WindowShouldClose()) {
         float dt = GetFrameTime();
 
-        camera.zoom = clamp(camera.zoom + GetMouseWheelMove() * dt * MOUSE_SPEED, 0.1f, 15);
+        camera.zoom = clamp(camera.zoom + GetMouseWheelMove() * dt * MOUSE_SPEED, 0.5f, 15);
         if (IsKeyPressed(KEY_F)) {
             debug_mode = !debug_mode;
         }
